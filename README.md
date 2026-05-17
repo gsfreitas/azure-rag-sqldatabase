@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="banner-RAG-sql.png" width="100%"/>
+</p>
+
 # 🗄️ Azure SQL Database + Azure OpenAI: Arquitetura RAG 100% Nativa
 
 Este repositório apresenta a implementação prática de uma arquitetura **RAG (Retrieval-Augmented Generation)** executada inteiramente dentro do motor relacional do **Azure SQL Database**, integrando-se nativamente com o **Azure OpenAI**. 
