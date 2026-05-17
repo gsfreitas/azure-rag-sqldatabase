@@ -36,3 +36,15 @@ EXEC sp_invoke_external_rest_endpoint
 SELECT @contexto AS contexto_recuperado,
        JSON_VALUE(@resp, '$.result.choices[0].message.content') AS resposta_ia;
 GO
+
+-- Resultado esperado
+[
+  {
+    "contexto_recuperado": " clicar em Esqueci minha senha. O código de verificação será enviado exclusivamente para o celular c 
+    adastrado via SMS. Caso o usuário mude de aparelho ou perca o acesso ao dispositivo, ele precisará a 
+    brir um chamado diretamente com a equipe de suporte.",
+    
+    "resposta": "Você precisa abrir um chamado diretamente com a equipe de suporte, pois o código de verificação será enviado 
+    exclusivamente para o celular cadastrado via SMS. Não há outra forma mencionada no contexto para recuperar sua senha."
+  }
+]
